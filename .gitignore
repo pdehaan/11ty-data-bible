@@ -1,0 +1,7 @@
+# Node
+node_modules
+
+# 11ty
+_site
+_data/bible/*.json
+templates/*.njk

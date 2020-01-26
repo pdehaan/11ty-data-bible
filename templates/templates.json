@@ -1,0 +1,4 @@
+{
+  "permalink": "book/{{ title | slug }}/chapter/{{ pagination.pageNumber + 1 }}/",
+  "layout": "layouts/chapter.njk"
+}

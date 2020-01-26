@@ -1,0 +1,18 @@
+---
+title: TOC
+pagination:
+  data: toc
+  size: 1
+  alias: testament
+permalink: "{{ testament.name | slug }}/"
+---
+
+<heading>
+  <h1>{{ testament.name }}</h1>
+</heading>
+
+<ul>
+  {%- for book in testament.books -%}
+  <li><a href="/book/{{ book | slug }}/chapter/1/">{{ book }}</a></li>
+  {%- endfor -%}
+</ul>

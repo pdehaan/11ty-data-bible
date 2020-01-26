@@ -1,0 +1,15 @@
+---
+layout: layouts/default.njk
+---
+
+<header>
+  <h1>{{ title }} <small>(Chapter {{ pagination.pageNumber + 1 }})</small></h1>
+</header>
+
+{{ content | safe }}
+
+<ol>
+  {%- for verse in chapter -%}
+  <li data-label="{{ title }} {{ pagination.pageNumber + 1}}:{{ loop.index }}">{{ verse }}</li>
+  {%- endfor %}
+</ol>
